@@ -8,11 +8,12 @@ body {
 }
 
 .header {
-  background-color: #FFB445;
+  background-color: #6A4825;
   min-height: 23vh;
   width: 100%;
   display: grid;
   grid-template-columns: 80fr 20fr;
+  color: #fff
 
 }
 
