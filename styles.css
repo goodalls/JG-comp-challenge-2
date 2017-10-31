@@ -7,6 +7,11 @@ body {
   width: 100%;
 }
 
+main-content-area {
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   background-color: #6A4825;
   min-height: 23vh;
@@ -82,29 +87,29 @@ nav ul li {
 }
 
 .card {
-  min-width: 100px;
-  width: 17em;
-  min-height: 27em;
+  max-width: 20%;
+  min-width: 250px;
+  height: fit-content;
   background-color: #fff;
   /*box-shadow: 2px #000;*/
   margin: 5px;
 }
 
 .card-header-1 {
- background-image: url(./images/ubuntu.jpg);
- width: 100%;
-  height: 40%;
+  background-image: url(./images/ubuntu.jpg);
+  width: 100%;
+  height: 164px;
   background-size: 100%;
- background-position: cover;
- background-repeat: no-repeat;
+  background-position: cover;
+  background-repeat: no-repeat;
 }
 
 .card-header-1 p {
-font-size: 1em;
+  font-size: 1em;
 }
 
 .card-header-1 span {
-font-size: 2em;
+  font-size: 2em;
 
 }
 
@@ -116,9 +121,9 @@ font-size: 2em;
   margin: 5%;
 }
 
- .share-arrow {
-    height: 4em;
-    margin: 10px 0 0 5px;
+.share-arrow {
+  height: 4em;
+  margin: 10px 0 0 5px;
 }
 
 .span {
@@ -148,26 +153,29 @@ blockquote {
 
 /*mobile*/
 @media only screen and (max-width: 768px) {
-  
-.header {
-  grid-template-columns: 50fr 50fr;
-} 
 
-.header img{
-  height: 4em;
-  margin-bottom: 1em;
-}
+  .header {
+    grid-template-columns: 50fr 50fr;
+  } 
 
-nav ul li {
-  margin: .5em;
-  display: block;
-}
+  .header img{
+    height: 4em;
+    margin-bottom: 1em;
+  }
 
-.header-aside {
-  justify-content: center;
-}
+  nav ul li {
+    margin: .5em;
+    display: block;
+  }
+
+  .header-aside {
+    justify-content: center;
+  }
+
+  .card {
+  max-width: 100%;
+  }
 
 
-
-}/*end of Mobile*/
+  }/*end of Mobile*/
 
